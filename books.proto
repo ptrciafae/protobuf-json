@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "github.com/ptrciafae/protobuf-json/schema";
+
+message Book {
+    string title = 1;
+    string author = 2;
+    int32 rating = 3;
+}
+
+message Books {
+    repeated Book books = 1;
+}
